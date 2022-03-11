@@ -7,6 +7,6 @@ function selectVa() {
 
     getresult.addEventListener("click", function () {
         location.reload();
-        alert(roomtempture);
+        used.innerHTML = roomtempture;
     })
 }
