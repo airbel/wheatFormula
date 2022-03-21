@@ -30,9 +30,9 @@ var restart = 0;
         tempdata[2] = flotrTempture
         tempdata[3] = flotrFriction
 
-        tempdata.forEach(function(v,i){
-            used.innerHTML +=tempdata[i]+"<br>";
-        })
+        // tempdata.forEach(function(v,i){
+        //     used.innerHTML += tempdata[i]+"<br>";
+        // })
         if (tempdata[0] != roomtempture &&　tempdata[1] != waternum){
             window.location.reload();
         }
@@ -42,7 +42,7 @@ var restart = 0;
         //     location.reload();
         // }
         // usedf.innerHTML = typeof(roomtempture);
-        used.innerHTML += roomtempture +'/'+waternum+'/'+flotrTempture+'/'+flotrFriction+"<br>";
+        used.innerHTML += "室溫"+roomtempture +';<br> 水溫'+waternum+';<br> 麵粉溫'+flotrTempture+';<br> 模擦係數'+flotrFriction+"<br>";
         // window.location.reload();
         clearTimeout(timeoutID);
         return false;
