@@ -3,6 +3,7 @@ var roomtempture = document.getElementById("roomtempture");   //室溫
 var waternum = document.getElementById("waternum");           //水溫
 var flotrTempture = document.getElementById("flotrTempture"); //粉溫
 var flotrFriction = document.getElementById("flotrFriction"); //摩擦係數
+var wannatempture = document.getElementById("wannatempture"); //理想溫度
 
 var getresult = document.getElementById("getresult");
 var used = document.getElementById("used");
@@ -15,6 +16,8 @@ var restart = 0;
         tempdata[1] = waternum
         tempdata[2] = flotrTempture
         tempdata[3] = flotrFriction
-        used.innerHTML = "室溫"+tempdata[0] +';<br> 水溫'+ waternum.value +';<br> 麵粉溫'+flotrTempture.value+';<br> 模擦係數'+flotrFriction.value+"<br>";
+
+
+        used.innerHTML = "室溫"+tempdata[0] +';<br> 水溫'+ waternum.value +';<br> 麵粉溫'+flotrTempture.value+';<br> 模擦係數'+flotrFriction.value+"<br>"+'******<br> 理想溫度'+wannatempture.value+"<br>";
         return false;
     })
